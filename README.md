@@ -3,8 +3,8 @@
 Modern, responsive developer and aspiring Data Analyst portfolio built with vanilla HTML5, CSS3 glassmorphism, dynamic Canvas background animations, interactive Resume & Qualifications preview, and EmailJS integration.
 
 ## 🚀 Live Demo & Repository
-- **GitHub Repository**: [https://github.com/ishum4935-cloud/portfolio4](https://github.com/ishum4935-cloud/portfolio4)
-- **Author**: Ishu Gautam ([@ishum4935-cloud](https://github.com/ishum4935-cloud))
+- **GitHub Repository**: [https://github.com/VoidCompilerOS/portfolio4](https://github.com/VoidCompilerOS/portfolio4)
+- **Author**: Ishu Gautam ([@VoidCompilerOS](https://github.com/VoidCompilerOS))
 - **Email**: ishum4935@gmail.com
 - **LinkedIn**: [https://linkedin.com/in/ishu-gautam-611653373](https://linkedin.com/in/ishu-gautam-611653373)
 
