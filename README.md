@@ -8,7 +8,7 @@ Modern, responsive developer and aspiring Data Analyst portfolio built with vani
 - **Email**: ishum4935@gmail.com
 - **LinkedIn**: [https://linkedin.com/in/ishu-gautam-611653373](https://linkedin.com/in/ishu-gautam-611653373)
 
-## 🛠️ Features & Tech Stack
+## 🛠️ Features  & Tech Stack
 - **Languages & Frameworks**: HTML5 Semantic Markup, Modern CSS3 with Custom Design System & Glassmorphism, Vanilla ES6+ JavaScript.
 - **Interactive Resume Section**: Document frame with toggleable high-resolution preview and embedded PDF viewer, downloadable official resume, and ATS recruiter digest.
 - **Data Pipeline Particle Visual**: Custom HTML5 Canvas rendering animated analytical data streams.
