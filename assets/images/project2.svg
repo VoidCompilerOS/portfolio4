@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p2Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0f19" />
+      <stop offset="50%" stop-color="#111827" />
+      <stop offset="100%" stop-color="#1e1b4b" />
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" />
+      <stop offset="100%" stop-color="#818cf8" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p2Grad)" />
+  
+  <g transform="translate(40, 30)">
+    <rect width="520" height="320" rx="12" fill="#0f172a" stroke="url(#cyanGrad)" stroke-width="1.5" />
+    <!-- Window bar -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="42" cy="22" r="5" fill="#f59e0b" />
+    <circle cx="59" cy="22" r="5" fill="#10b981" />
+    <rect x="90" y="14" width="280" height="16" rx="8" fill="rgba(255,255,255,0.06)" />
+    <text x="140" y="26" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">ishugautam.portfolio.dev</text>
+
+    <!-- Portfolio UI Hero Mockup -->
+    <text x="40" y="85" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">&gt; open to internships · bhopal, india</text>
+    <text x="40" y="125" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="28" fill="#f8fafc">
+      Hi, I'm <tspan fill="url(#cyanGrad)">Ishu Gautam</tspan>
+    </text>
+    <text x="40" y="155" font-family="'Inter', sans-serif" font-weight="500" font-size="14" fill="#a5b4fc">Aspiring Data Analyst | BCA AI &amp; DS</text>
+
+    <!-- Interactive stats / metrics glass cards -->
+    <g transform="translate(40, 180)">
+      <rect width="135" height="90" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="20" y="35" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" fill="#38bdf8">100%</text>
+      <text x="20" y="60" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Responsive UI</text>
+    </g>
+
+    <g transform="translate(195, 180)">
+      <rect width="135" height="90" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="20" y="35" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" fill="#818cf8">6+</text>
+      <text x="20" y="60" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Certifications</text>
+    </g>
+
+    <g transform="translate(350, 180)">
+      <rect width="135" height="90" rx="8" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.1)" />
+      <text x="20" y="35" font-family="'JetBrains Mono', monospace" font-size="22" font-weight="700" fill="#10b981">Live</text>
+      <text x="20" y="60" font-family="'Inter', sans-serif" font-size="11" fill="#94a3b8">Dark &amp; Light Mode</text>
+    </g>
+  </g>
+</svg>

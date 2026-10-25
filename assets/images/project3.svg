@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p3Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b132b" />
+      <stop offset="50%" stop-color="#1c2541" />
+      <stop offset="100%" stop-color="#0b132b" />
+    </linearGradient>
+    <linearGradient id="barGrad1" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#0284c7" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <linearGradient id="barGrad2" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+    <linearGradient id="barGrad3" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#34d399" />
+    </linearGradient>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p3Grad)" />
+  
+  <g transform="translate(40, 30)">
+    <rect width="520" height="320" rx="12" fill="#0f172a" stroke="rgba(56, 189, 248, 0.4)" stroke-width="1.5" />
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="42" cy="22" r="5" fill="#f59e0b" />
+    <circle cx="59" cy="22" r="5" fill="#10b981" />
+    <rect x="90" y="14" width="280" height="16" rx="8" fill="rgba(255,255,255,0.06)" />
+    <text x="140" y="26" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">sales-analytics.eda.py</text>
+
+    <!-- Header bar inside mockup -->
+    <text x="30" y="70" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="16" fill="#f8fafc">Sales &amp; Customer Insights Dashboard</text>
+    <text x="30" y="90" font-family="'JetBrains Mono', monospace" font-size="11" fill="#38bdf8">Python · Pandas · SQL Queries · Seaborn</text>
+
+    <!-- Chart 1: Bar chart -->
+    <g transform="translate(30, 115)">
+      <rect width="250" height="160" rx="8" fill="#1e293b" />
+      <text x="15" y="25" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#cbd5e1">Monthly Revenue (SQL Aggr.)</text>
+      <!-- Bars -->
+      <rect x="25" y="100" width="20" height="40" rx="3" fill="url(#barGrad1)" />
+      <rect x="55" y="75" width="20" height="65" rx="3" fill="url(#barGrad1)" />
+      <rect x="85" y="60" width="20" height="80" rx="3" fill="url(#barGrad1)" />
+      <rect x="115" y="45" width="20" height="95" rx="3" fill="url(#barGrad1)" />
+      <rect x="145" y="35" width="20" height="105" rx="3" fill="url(#barGrad2)" />
+      <rect x="175" y="50" width="20" height="90" rx="3" fill="url(#barGrad2)" />
+      <rect x="205" y="25" width="20" height="115" rx="3" fill="url(#barGrad3)" />
+      <line x1="20" y1="140" x2="235" y2="140" stroke="#475569" stroke-width="1" />
+    </g>
+
+    <!-- Chart 2: Metrics & Donut Chart -->
+    <g transform="translate(300, 115)">
+      <rect width="190" height="160" rx="8" fill="#1e293b" />
+      <text x="15" y="25" font-family="'Inter', sans-serif" font-weight="600" font-size="11" fill="#cbd5e1">Churn Breakdown</text>
+      <!-- Donut circle -->
+      <circle cx="95" cy="85" r="40" fill="none" stroke="#38bdf8" stroke-width="12" stroke-dasharray="160 251" />
+      <circle cx="95" cy="85" r="40" fill="none" stroke="#a855f7" stroke-width="12" stroke-dasharray="60 251" stroke-dashoffset="-160" />
+      <circle cx="95" cy="85" r="40" fill="none" stroke="#10b981" stroke-width="12" stroke-dasharray="31 251" stroke-dashoffset="-220" />
+      <text x="95" y="90" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700" fill="#f8fafc">84.2%</text>
+      <text x="95" y="145" text-anchor="middle" font-family="'Inter', sans-serif" font-size="10" fill="#94a3b8">Customer Retention Rate</text>
+    </g>
+  </g>
+</svg>

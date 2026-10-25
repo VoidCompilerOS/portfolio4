@@ -1,0 +1,769 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ishu Gautam | Aspiring Data Analyst</title>
+  <meta name="description"
+    content="Portfolio of Ishu Gautam — BCA (AI &amp; Data Science) student at SAGE University, Bhopal. Aspiring Data Analyst passionate about Python, SQL, and data-driven insights.">
+  <meta name="keywords"
+    content="Ishu Gautam, Data Analyst, Aspiring Data Analyst, BCA Student, SAGE University Bhopal, Python, SQL, Data Visualization, Portfolio">
+  <meta name="author" content="Ishu Gautam">
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Ishu Gautam | Aspiring Data Analyst">
+  <meta property="og:description"
+    content="BCA (AI &amp; Data Science) student, aspiring Data Analyst. Explore my projects, skills, certificates and journey.">
+  <meta property="og:type" content="website">
+
+  <!-- Anti-FOUC Theme Initialization (Modern Web Guidance) -->
+  <script>
+    try {
+      const storedTheme = localStorage.getItem('theme');
+      if (storedTheme) {
+        document.documentElement.setAttribute('data-theme', storedTheme);
+      }
+    } catch (e) { }
+  </script>
+
+  <!-- Google Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code/mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+  <!-- ================= SCROLL PROGRESS BAR ================= -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- ================= CURSOR GLOW ================= -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- ================= HEADER & NAVIGATION ================= -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo" aria-label="Ishu Gautam — Home">
+        <span class="logo-mark">IG</span>
+        <span class="logo-text">Ishu Gautam<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link" data-section="about">About</a>
+        <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#experience" class="nav-link" data-section="experience">Experience</a>
+        <a href="#certificates" class="nav-link" data-section="certificates">Certificates</a>
+        <a href="#resume" class="nav-link" data-section="resume">Resume</a>
+        <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark mode" title="Toggle theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4.2" />
+            <path
+              d="M12 2v2.4M12 19.6V22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M2 12h2.4M19.6 12H22M4.9 19.1l1.7-1.7M17.4 6.6l1.7-1.7" />
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5Z" />
+          </svg>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO SECTION ================= -->
+    <section class="hero" id="home">
+      <canvas class="hero-canvas" id="pipelineCanvas" aria-hidden="true"></canvas>
+
+      <div class="hero-inner container">
+        <div class="hero-text reveal">
+          <p class="eyebrow mono"><span class="eyebrow-dot"></span> Open to internships · Bhopal, India</p>
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad-text">Ishu Gautam</span>
+          </h1>
+          <h2 class="hero-role">
+            <span id="typedRole" class="typed-role"></span><span class="typed-cursor">|</span>
+          </h2>
+          <p class="hero-desc">
+            BCA student at SAGE University, Bhopal, majoring in AI &amp; Data Science.
+            I leverage Python, SQL, and data visualization tools to transform raw datasets into clear, actionable
+            business insights.
+          </p>
+
+          <div class="hero-cta">
+            <a href="assets/resume/Ishu_Gautam_Resume.pdf" class="btn btn-primary ripple"
+              download="Ishu_Gautam_Resume.pdf">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+                <path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16" />
+              </svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost ripple">Contact Me</a>
+          </div>
+
+          <div class="hero-socials">
+            <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener" aria-label="GitHub"
+              class="social-icon" title="GitHub">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 .5 12.24c0 5.18 3.29 9.57 7.86 11.12.57.11.78-.26.78-.57v-2.02c-3.2.72-3.87-1.6-3.87-1.6-.53-1.38-1.29-1.75-1.29-1.75-1.05-.75.08-.74.08-.74 1.17.09 1.78 1.24 1.78 1.24 1.03 1.82 2.7 1.3 3.36.99.1-.77.4-1.3.73-1.6-2.56-.3-5.25-1.33-5.25-5.9 0-1.3.44-2.36 1.17-3.19-.12-.3-.5-1.52.11-3.16 0 0 .96-.32 3.15 1.22a10.6 10.6 0 0 1 5.74 0c2.19-1.54 3.15-1.22 3.15-1.22.62 1.64.23 2.86.11 3.16.73.83 1.17 1.89 1.17 3.19 0 4.58-2.7 5.6-5.27 5.89.42.37.78 1.09.78 2.2v3.26c0 .31.21.69.79.57A11.75 11.75 0 0 0 23.5 12.2 11.5 11.5 0 0 0 12 .5Z" />
+              </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/ishu-gautam-611653373/" target="_blank" rel="noopener"
+              aria-label="LinkedIn" class="social-icon" title="LinkedIn">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                <path
+                  d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+              </svg>
+            </a>
+            <a href="mailto:ishum4935@gmail.com" aria-label="Email" class="social-icon" title="Email">
+              <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 5h18v14H3V5Z" />
+                <path d="m3 6 9 7 9-7" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="avatar-ring">
+            <div class="avatar-frame">
+              <img src="assets/images/profile.jpg" alt="Ishu Gautam" class="avatar-img" id="profileImg">
+            </div>
+            <span class="orbit-dot orbit-dot-1">Py</span>
+            <span class="orbit-dot orbit-dot-2">SQL</span>
+            <span class="orbit-dot orbit-dot-3">C++</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- ================= HERO STATS COUNTER STRIP ================= -->
+      <div class="hero-stats container reveal">
+        <div class="stats-card glass-card">
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="3">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label mono">Official Certifications</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="15">0</span><span class="stat-plus">+</span>
+            </div>
+            <span class="stat-label mono">Core Tech &amp; Tools</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat-item">
+            <div class="stat-number-wrap">
+              <span class="stat-number" data-target="100">0</span><span class="stat-plus">%</span>
+            </div>
+            <span class="stat-label mono">Hands-On Projects</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT SECTION ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-eyebrow mono">About</p>
+        <h2 class="section-title">The Person Behind the Data</h2>
+
+        <div class="about-grid">
+          <div class="about-copy reveal">
+            <p>Hello! I'm <strong>Ishu Gautam</strong>, an undergraduate BCA student at <strong>SAGE University,
+                Bhopal</strong>, specializing in Artificial Intelligence &amp; Data Science.</p>
+            <p>I am passionate about <strong>Data Analytics</strong> — uncovering hidden patterns, optimizing queries,
+              and transforming complex data points into intuitive visual narratives that drive strategic business decisions.</p>
+            <p>Currently seeking a <strong>Data Analyst Internship</strong> where I can contribute to real-world analytical
+              pipelines, engineer insights from messy datasets, and collaborate with passionate tech teams.</p>
+
+            <div class="about-goal glass-card">
+              <span class="goal-label mono">Career Focus</span>
+              <p>Harnessing Python, SQL, and business intelligence tooling to deliver high-impact, data-informed value.</p>
+            </div>
+          </div>
+
+          <div class="about-pillars reveal">
+            <div class="pillar-card glass-card">
+              <span class="pillar-num mono">01</span>
+              <div>
+                <h4>Data Analysis &amp; EDA</h4>
+                <p>Uncovering patterns, anomalies, and metric trends from raw multi-dimensional datasets with Pandas &amp; Seaborn.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <span class="pillar-num mono">02</span>
+              <div>
+                <h4>Relational DBs &amp; SQL</h4>
+                <p>Writing structured queries, multi-table joins, aggregations, and data transformation scripts for actionable metrics.</p>
+              </div>
+            </div>
+
+            <div class="pillar-card glass-card">
+              <span class="pillar-num mono">03</span>
+              <div>
+                <h4>Insight Communication</h4>
+                <p>Translating statistical findings into clean dashboards, clear executive summaries, and decision-ready visual stories.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS SECTION ================= -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-eyebrow mono">Skills</p>
+        <h2 class="section-title">Technical Expertise &amp; Tools</h2>
+
+        <div class="skills-grid">
+          <!-- 1. Languages & Core Foundations -->
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path
+                  d="M9 3H7a2 2 0 0 0-2 2v3a2 2 0 0 1-2 2 2 2 0 0 1 2 2v3a2 2 0 0 0 2 2h2M15 3h2a2 2 0 0 1 2 2v3a2 2 0 0 0 2 2 2 2 0 0 0-2 2v3a2 2 0 0 1-2 2h-2" />
+              </svg>
+            </div>
+            <h3>Languages &amp; Foundations</h3>
+            <ul class="skill-list">
+              <li><span>Python</span><em class="mono">Core &amp; Analytics</em></li>
+              <li><span>C &amp; C++</span><em class="mono">OOP &amp; Systems</em></li>
+              <li><span>JavaScript</span><em class="mono">ES6+ &amp; Logic</em></li>
+              <li><span>DSA</span><em class="mono">Algorithms &amp; Problem Solving</em></li>
+            </ul>
+          </div>
+
+          <!-- 2. Web & Frameworks -->
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M4 4h16v4H4V4Zm0 6h16v10H4V10Zm3 3h4" />
+              </svg>
+            </div>
+            <h3>Web &amp; Frameworks</h3>
+            <ul class="skill-list">
+              <li><span>React.js</span><em class="mono">Components &amp; State</em></li>
+              <li><span>Next.js</span><em class="mono">SSR &amp; Modern Web</em></li>
+              <li><span>HTML5</span><em class="mono">Semantic Markup</em></li>
+              <li><span>CSS3</span><em class="mono">Responsive &amp; Glass</em></li>
+            </ul>
+          </div>
+
+          <!-- 3. Data & Analytics -->
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8">
+                <ellipse cx="12" cy="5" rx="8" ry="3" />
+                <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3" />
+              </svg>
+            </div>
+            <h3>Data &amp; Analytics</h3>
+            <ul class="skill-list">
+              <li><span>SQL</span><em class="mono">Queries, Joins &amp; Aggregation</em></li>
+              <li><span>Statistics</span><em class="mono">Probability &amp; Inference</em></li>
+              <li><span>Excel</span><em class="mono">Pivot Tables &amp; Formulas</em></li>
+              <li><span>Data Cleaning</span><em class="mono">EDA &amp; Pipelines</em></li>
+            </ul>
+          </div>
+
+          <!-- 4. Tools & Professional -->
+          <div class="skill-card glass-card reveal">
+            <div class="skill-icon">
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.8">
+                <path d="M14.7 3.3a1 1 0 0 1 1.4 0l4.6 4.6a1 1 0 0 1 0 1.4l-9.2 9.2-6 1.4 1.4-6 9.2-9.2Z" />
+              </svg>
+            </div>
+            <h3>Tools &amp; Workflow</h3>
+            <ul class="skill-list">
+              <li><span>Git &amp; GitHub</span><em class="mono">Version Control &amp; CI</em></li>
+              <li><span>Vercel</span><em class="mono">Deployment &amp; Cloud</em></li>
+              <li><span>VS Code</span><em class="mono">Primary Dev Environment</em></li>
+              <li><span>Communication</span><em class="mono">Technical Storytelling</em></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-eyebrow mono">Projects</p>
+        <h2 class="section-title">Featured Work &amp; Case Studies</h2>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: Sales & Customer Insights Dashboard -->
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project3.svg" alt="Sales and Customer Insights Dashboard preview"
+                class="project-image">
+            </div>
+            <div class="project-body">
+              <h3>Sales &amp; Customer Insights Dashboard</h3>
+              <p>Exploratory data analysis project built with Python and SQL. Analyzes monthly revenue trends, customer
+                churn rates, and retention drivers with clear visual representations.</p>
+              <div class="tag-row">
+                <span class="tag mono">Python</span>
+                <span class="tag mono">Pandas</span>
+                <span class="tag mono">SQL</span>
+                <span class="tag mono">Seaborn</span>
+                <span class="tag mono">EDA</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-primary ripple">View Project</a>
+                <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-ghost ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Emotion Delivery Platform -->
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project1.svg" alt="Emotion Delivery Platform UI preview" class="project-image">
+            </div>
+            <div class="project-body">
+              <h3>Emotion Delivery Platform</h3>
+              <p>An emotion-driven gift recommendation and delivery web platform with a responsive frontend, custom
+                category filtering, and modern design aesthetics.</p>
+              <div class="tag-row">
+                <span class="tag mono">HTML5</span>
+                <span class="tag mono">CSS3</span>
+                <span class="tag mono">JavaScript</span>
+                <span class="tag mono">UI/UX</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-primary ripple">Live Demo</a>
+                <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-ghost ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Portfolio Website -->
+          <article class="project-card glass-card reveal">
+            <div class="project-thumb">
+              <img src="assets/images/project2.svg" alt="Personal Portfolio Website preview" class="project-image">
+            </div>
+            <div class="project-body">
+              <h3>Personal Developer Portfolio</h3>
+              <p>A fast, responsive portfolio engineered with semantic HTML5, Apple-style frosted glassmorphism, dynamic
+                data pipeline canvas animations, and dark/light mode toggle.</p>
+              <div class="tag-row">
+                <span class="tag mono">HTML5</span>
+                <span class="tag mono">CSS3</span>
+                <span class="tag mono">JavaScript</span>
+                <span class="tag mono">Canvas</span>
+              </div>
+              <div class="project-links">
+                <a href="#home" class="btn btn-sm btn-primary ripple">Current Site</a>
+                <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener"
+                  class="btn btn-sm btn-ghost ripple">GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE & EDUCATION ================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="section-eyebrow mono">Background</p>
+        <h2 class="section-title">Experience &amp; Education</h2>
+
+        <div class="experience-grid">
+          <!-- 1. Practical Internship -->
+          <div class="internship-card glass-card reveal">
+            <div class="internship-head">
+              <div>
+                <span class="mono" style="font-size: 0.78rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.06em;">Practical Internship</span>
+                <h3 style="margin-top: 0.25rem;">Artificial Intelligence Intern</h3>
+                <p class="internship-company">Acmegrade</p>
+              </div>
+              <span class="internship-date mono">March 2026 – May 2026</span>
+            </div>
+            <ul class="internship-highlights">
+              <li>Gained hands-on exposure to Artificial Intelligence fundamentals and computational reasoning.</li>
+              <li>Completed applied programming assignments analyzing structured datasets and problem statements.</li>
+              <li>Enhanced problem breakdown and analytical solution design methodologies.</li>
+            </ul>
+          </div>
+
+          <!-- 2. Academic Background -->
+          <div class="education-card glass-card reveal">
+            <div class="internship-head">
+              <div>
+                <span class="mono" style="font-size: 0.78rem; color: var(--accent-cyan); text-transform: uppercase; letter-spacing: 0.06em;">Academic Degree</span>
+                <h3 style="margin-top: 0.25rem;">Bachelor of Computer Applications</h3>
+                <p class="internship-company" style="color: var(--text-secondary); font-weight: 500;">SAGE University, Bhopal · AI &amp; DS</p>
+              </div>
+              <span class="internship-date mono">Undergraduate</span>
+            </div>
+            <ul class="internship-highlights">
+              <li>Core curriculum focused on algorithms, data structures, and database management systems.</li>
+              <li>Rigorous coursework in Python data ecosystems, statistics, and business analytics.</li>
+              <li>Consistently building practical repositories and real-world analytical case studies.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATES SECTION ================= -->
+    <section class="section" id="certificates">
+      <div class="container">
+        <p class="section-eyebrow mono">Certificates</p>
+        <h2 class="section-title">Verified Credentials</h2>
+
+        <div class="certificates-grid">
+
+          <!-- 1. Introduction to Generative AI -->
+          <div class="cert-card glass-card reveal">
+            <img src="assets/certificates/genai_certificate.png"
+              alt="Introduction to Generative AI Certificate - Ishu Gautam" class="cert-image">
+            <h3>Introduction to Generative AI</h3>
+            <p class="cert-issuer mono">Simplilearn · Powered by Google Cloud</p>
+            <p class="cert-meta mono">Code: 10936195 · Issued Oct 2026</p>
+            <a href="assets/certificates/genai_certificate.pdf" target="_blank" rel="noopener"
+              class="btn btn-sm btn-ghost ripple">View Full Certificate (PDF)</a>
+          </div>
+
+          <!-- 2. Introduction to Data Analytics -->
+          <div class="cert-card glass-card reveal">
+            <img src="assets/certificates/data_analytics_certificate.png"
+              alt="Introduction to Data Analytics Certificate - Ishu Gautam" class="cert-image">
+            <h3>Introduction to Data Analytics</h3>
+            <p class="cert-issuer mono">Simplilearn SkillUp</p>
+            <p class="cert-meta mono">Code: 10936963 · Issued Oct 2026</p>
+            <a href="assets/certificates/data_analytics_certificate.pdf" target="_blank" rel="noopener"
+              class="btn btn-sm btn-ghost ripple">View Full Certificate (PDF)</a>
+          </div>
+
+          <!-- 3. Introduction to C++ -->
+          <div class="cert-card glass-card reveal">
+            <img src="assets/certificates/cpp_certificate.png" alt="Introduction to C++ Certificate - Ishu Gautam"
+              class="cert-image">
+            <h3>Introduction to C++</h3>
+            <p class="cert-issuer mono">Simplilearn SkillUp</p>
+            <p class="cert-meta mono">Code: 10937831 · Issued Oct 2026</p>
+            <a href="assets/certificates/cpp_certificate.pdf" target="_blank" rel="noopener"
+              class="btn btn-sm btn-ghost ripple">View Full Certificate (PDF)</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESUME SECTION ================= -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="resume-header-wrap">
+          <p class="section-eyebrow mono">Curriculum Vitae</p>
+          <div class="resume-title-row">
+            <div>
+              <h2 class="section-title">Resume &amp; Qualifications</h2>
+              <p class="resume-subtitle">Academic foundations, technical stack, analytical background, and verified credentials.</p>
+            </div>
+            <div class="resume-actions-top">
+              <a href="assets/resume/Ishu_Gautam_Resume.pdf" class="btn btn-primary ripple"
+                download="Ishu_Gautam_Resume.pdf" id="resumeDownloadBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                  <path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16" />
+                </svg>
+                Download PDF
+              </a>
+              <a href="assets/resume/Ishu_Gautam_Resume.pdf" target="_blank" rel="noopener" class="btn btn-ghost ripple" id="resumeViewPdfBtn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18" aria-hidden="true">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                </svg>
+                Open Fullscreen
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Highlight Pills -->
+          <div class="resume-pills-bar">
+            <span class="resume-pill mono"><span class="pill-dot"></span> BCA (AI &amp; Data Science)</span>
+            <span class="resume-pill mono"><span class="pill-dot"></span> SAGE University, Bhopal</span>
+            <span class="resume-pill mono"><span class="pill-dot"></span> Python, SQL &amp; Analytics</span>
+            <span class="resume-pill mono"><span class="pill-dot"></span> Actively Seeking Internships</span>
+          </div>
+        </div>
+
+        <div class="resume-layout">
+          <!-- Left Column: Interactive Document Viewer -->
+          <div class="resume-viewer-col reveal">
+            <div class="resume-frame glass-card">
+              <div class="resume-frame-topbar">
+                <div class="frame-dots" aria-hidden="true">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="frame-file mono">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                    <polyline points="14 2 14 8 20 8" />
+                  </svg>
+                  <span>Ishu_Gautam_Resume.pdf</span>
+                </div>
+                <div class="frame-view-toggle">
+                  <button type="button" class="frame-tab active" id="tabPreviewBtn" aria-pressed="true">Preview</button>
+                  <button type="button" class="frame-tab" id="tabPdfBtn" aria-pressed="false">PDF Embed</button>
+                </div>
+              </div>
+
+              <div class="resume-doc-body">
+                <!-- Visual high-res preview mode (default & mobile-bulletproof) -->
+                <div class="resume-preview-wrap" id="resumePreviewPane">
+                  <img src="assets/resume/resume_preview.png" alt="Ishu Gautam Resume Preview" class="resume-preview-img" id="resumePreviewImg" loading="lazy">
+                  <div class="resume-overlay">
+                    <a href="assets/resume/Ishu_Gautam_Resume.pdf" target="_blank" rel="noopener" class="btn btn-sm btn-primary ripple">
+                      <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14 21 3" />
+                      </svg>
+                      View Original PDF
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Interactive PDF Embed pane (toggleable) -->
+                <div class="resume-pdf-wrap" id="resumePdfPane" style="display: none;">
+                  <iframe src="assets/resume/Ishu_Gautam_Resume.pdf#toolbar=0&navpanes=0" class="resume-iframe" title="Ishu Gautam Resume PDF Viewer" loading="lazy"></iframe>
+                </div>
+              </div>
+
+              <div class="resume-frame-footer">
+                <span class="mono page-count">Page 1 of 1 · Verified Resume PDF</span>
+                <a href="assets/resume/Ishu_Gautam_Resume.pdf" download="Ishu_Gautam_Resume.pdf" class="frame-download-link mono">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 3v12m0 0-4-4m4 4 4-4M4 20h16" />
+                  </svg>
+                  Save PDF
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column: Structured Recruiter Digest & Highlights -->
+          <div class="resume-digest-col reveal">
+            <!-- Summary card -->
+            <div class="digest-card glass-card">
+              <div class="digest-card-header">
+                <span class="digest-icon mono">01</span>
+                <h3>Professional Summary</h3>
+              </div>
+              <p class="digest-summary-text">
+                BCA student specialising in <strong>Artificial Intelligence and Data Science</strong> at <strong>SAGE University, Bhopal</strong>, seeking a <strong>Data Analyst Internship</strong>. Building foundational skills in Python, SQL, data cleaning, and data interpretation, and eager to apply them to real datasets while learning from industry professionals. Interested in developing practical experience in data analysis and reporting.
+              </p>
+            </div>
+
+            <!-- Technical Skills Matrix -->
+            <div class="digest-card glass-card">
+              <div class="digest-card-header">
+                <span class="digest-icon mono">02</span>
+                <h3>Technical &amp; Analytical Competencies</h3>
+              </div>
+              <div class="digest-skill-groups">
+                <div class="digest-skill-group">
+                  <span class="digest-group-title mono">Programming</span>
+                  <div class="digest-badge-row">
+                    <span class="tag mono">Python (Basic)</span>
+                    <span class="tag mono">C++ (Basic)</span>
+                    <span class="tag mono">C (Basic)</span>
+                    <span class="tag mono">JavaScript (Basic)</span>
+                  </div>
+                </div>
+                <div class="digest-skill-group">
+                  <span class="digest-group-title mono">Data &amp; Querying</span>
+                  <div class="digest-badge-row">
+                    <span class="tag mono">SQL (Basic)</span>
+                    <span class="tag mono">Data Cleaning</span>
+                    <span class="tag mono">Data Interpretation</span>
+                  </div>
+                </div>
+                <div class="digest-skill-group">
+                  <span class="digest-group-title mono">DSA &amp; Web</span>
+                  <div class="digest-badge-row">
+                    <span class="tag mono">Arrays</span>
+                    <span class="tag mono">Hashing</span>
+                    <span class="tag mono">HTML5</span>
+                    <span class="tag mono">CSS3</span>
+                    <span class="tag mono">Git &amp; GitHub</span>
+                    <span class="tag mono">Vercel</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Key Project & Soft Skills -->
+            <div class="digest-card glass-card">
+              <div class="digest-card-header">
+                <span class="digest-icon mono">03</span>
+                <h3>Featured Project &amp; Soft Skills</h3>
+              </div>
+              <div class="project-mini-item">
+                <div class="project-mini-top">
+                  <h4>Emotion Delivery Platform</h4>
+                  <span class="mono project-mini-stack">HTML · CSS · JS · Vercel · GitHub</span>
+                </div>
+                <ul class="project-mini-points">
+                  <li>Built a responsive, emotion-based gift delivery platform with a clean and user-friendly interface.</li>
+                  <li>Implemented user authentication and order flow while maintaining responsive behaviour across devices.</li>
+                  <li>Deployed the project on Vercel and managed source code and version control with GitHub.</li>
+                </ul>
+              </div>
+              <div class="digest-soft-skills">
+                <span class="digest-group-title mono">Soft Skills:</span>
+                <p>Analytical Thinking, Time Management, Quick Learner, Effective Communication, Adaptability</p>
+                <span class="digest-group-title mono" style="margin-top: 0.5rem; display: inline-block;">Languages:</span>
+                <p><strong>English</strong> | <strong>Hindi</strong></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <p class="section-eyebrow mono">Contact</p>
+        <h2 class="section-title">Let's Connect &amp; Collaborate</h2>
+        <p class="contact-lede">Have a Data Analyst internship opening, an interesting analytics project, or want to
+          discuss data trends? I'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <a href="mailto:ishum4935@gmail.com" class="contact-row glass-card">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M3 5h18v14H3V5Z" />
+                <path d="m3 6 9 7 9-7" />
+              </svg>
+              <span>ishum4935@gmail.com</span>
+            </a>
+            <div class="contact-row glass-card">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M21 10c0 6-9 12-9 12S3 16 3 10a9 9 0 1 1 18 0Z" />
+                <circle cx="12" cy="10" r="3" />
+              </svg>
+              <span>Bhopal, Madhya Pradesh, India</span>
+            </div>
+            <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener" class="contact-row glass-card">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path
+                  d="M12 .5A11.5 11.5 0 0 0 .5 12.24c0 5.18 3.29 9.57 7.86 11.12.57.11.78-.26.78-.57v-2.02c-3.2.72-3.87-1.6-3.87-1.6-.53-1.38-1.29-1.75-1.29-1.75-1.05-.75.08-.74.08-.74 1.17.09 1.78 1.24 1.78 1.24 1.03 1.82 2.7 1.3 3.36.99.1-.77.4-1.3.73-1.6-2.56-.3-5.25-1.33-5.25-5.9 0-1.3.44-2.36 1.17-3.19-.12-.3-.5-1.52.11-3.16 0 0 .96-.32 3.15 1.22a10.6 10.6 0 0 1 5.74 0c2.19-1.54 3.15-1.22 3.15-1.22.62 1.64.23 2.86.11 3.16.73.83 1.17 1.89 1.17 3.19 0 4.58-2.7 5.6-5.27 5.89.42.37.78 1.09.78 2.2v3.26c0 .31.21.69.79.57A11.75 11.75 0 0 0 23.5 12.2 11.5 11.5 0 0 0 12 .5Z" />
+              </svg>
+              <span>github.com/ishum4935-cloud</span>
+            </a>
+            <a href="https://www.linkedin.com/in/ishu-gautam-611653373/" target="_blank" rel="noopener"
+              class="contact-row glass-card">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+                <path
+                  d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+              </svg>
+              <span>linkedin.com/in/ishu-gautam-611653373</span>
+            </a>
+
+          </div>
+
+          <form class="contact-form glass-card reveal" id="contactForm" novalidate>
+            <div class="form-row">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="from_name" placeholder="e.g. Alex Morgan" required autocomplete="name">
+              <span class="field-error">Please enter your name.</span>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="reply_to" placeholder="alex@company.com" required
+                autocomplete="email">
+              <span class="field-error">Please enter a valid email address.</span>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Hi Ishu, I came across your portfolio and wanted to discuss..." required></textarea>
+              <span class="field-error">Please enter a message.</span>
+            </div>
+
+            <button type="submit" class="btn btn-primary ripple form-submit" id="formSubmitBtn">
+              <span class="btn-label">Send Message</span>
+            </button>
+            <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>Designed &amp; developed by <strong>Ishu Gautam</strong></p>
+      <div class="footer-socials">
+        <a href="https://github.com/ishum4935-cloud" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M12 .5A11.5 11.5 0 0 0 .5 12.24c0 5.18 3.29 9.57 7.86 11.12.57.11.78-.26.78-.57v-2.02c-3.2.72-3.87-1.6-3.87-1.6-.53-1.38-1.29-1.75-1.29-1.75-1.05-.75.08-.74.08-.74 1.17.09 1.78 1.24 1.78 1.24 1.03 1.82 2.7 1.3 3.36.99.1-.77.4-1.3.73-1.6-2.56-.3-5.25-1.33-5.25-5.9 0-1.3.44-2.36 1.17-3.19-.12-.3-.5-1.52.11-3.16 0 0 .96-.32 3.15 1.22a10.6 10.6 0 0 1 5.74 0c2.19-1.54 3.15-1.22 3.15-1.22.62 1.64.23 2.86.11 3.16.73.83 1.17 1.89 1.17 3.19 0 4.58-2.7 5.6-5.27 5.89.42.37.78 1.09.78 2.2v3.26c0 .31.21.69.79.57A11.75 11.75 0 0 0 23.5 12.2 11.5 11.5 0 0 0 12 .5Z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/ishu-gautam-611653373/" target="_blank" rel="noopener"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+            <path
+              d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45Z" />
+          </svg>
+        </a>
+        <a href="mailto:ishum4935@gmail.com" aria-label="Email">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 5h18v14H3V5Z" />
+            <path d="m3 6 9 7 9-7" />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-copy mono">&copy; <span id="year"></span> Ishu Gautam. All rights reserved.</p>
+    </div>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M12 19V5M5 12l7-7 7 7" />
+      </svg>
+    </button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

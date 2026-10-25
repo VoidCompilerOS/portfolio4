@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 380" width="100%" height="100%">
+  <defs>
+    <linearGradient id="p1Grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a" />
+      <stop offset="50%" stop-color="#1e1b4b" />
+      <stop offset="100%" stop-color="#090d16" />
+    </linearGradient>
+    <linearGradient id="pinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f43f5e" />
+      <stop offset="100%" stop-color="#fb7185" />
+    </linearGradient>
+    <linearGradient id="purpleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6" />
+      <stop offset="100%" stop-color="#c084fc" />
+    </linearGradient>
+    <filter id="p1Shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#f43f5e" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <rect width="600" height="380" rx="16" fill="url(#p1Grad)" />
+  
+  <!-- Browser window chrome -->
+  <g transform="translate(40, 30)">
+    <rect width="520" height="320" rx="12" fill="#1e293b" stroke="rgba(255,255,255,0.1)" stroke-width="1.5" />
+    <!-- Window controls -->
+    <circle cx="25" cy="22" r="5" fill="#ef4444" />
+    <circle cx="42" cy="22" r="5" fill="#f59e0b" />
+    <circle cx="59" cy="22" r="5" fill="#10b981" />
+    <rect x="90" y="14" width="280" height="16" rx="8" fill="rgba(255,255,255,0.06)" />
+    <text x="140" y="26" font-family="'JetBrains Mono', monospace" font-size="10" fill="#94a3b8">emotion-delivery.vercel.app</text>
+
+    <!-- Platform UI mockup -->
+    <rect x="20" y="55" width="480" height="245" rx="8" fill="#0f172a" />
+    
+    <!-- Hero inside mockup -->
+    <text x="40" y="95" font-family="'Space Grotesk', sans-serif" font-weight="700" font-size="20" fill="#f8fafc">Express Emotion Through Gifting</text>
+    <text x="40" y="120" font-family="'Inter', sans-serif" font-size="12" fill="#94a3b8">AI-curated sentiment gift matching &amp; rapid express delivery</text>
+
+    <!-- Emotion Cards -->
+    <g transform="translate(40, 140)">
+      <rect width="130" height="130" rx="10" fill="rgba(244, 63, 94, 0.12)" stroke="url(#pinkGrad)" stroke-width="1.5" />
+      <circle cx="65" cy="45" r="22" fill="url(#pinkGrad)" filter="url(#p1Shadow)" />
+      <text x="65" y="52" text-anchor="middle" font-size="20">💝</text>
+      <text x="65" y="90" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#f8fafc">Love &amp; Care</text>
+      <text x="65" y="110" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#fb7185">98% Match</text>
+    </g>
+
+    <g transform="translate(190, 140)">
+      <rect width="130" height="130" rx="10" fill="rgba(139, 92, 246, 0.12)" stroke="url(#purpleGrad)" stroke-width="1.5" />
+      <circle cx="65" cy="45" r="22" fill="url(#purpleGrad)" />
+      <text x="65" y="52" text-anchor="middle" font-size="20">🎉</text>
+      <text x="65" y="90" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#f8fafc">Celebration</text>
+      <text x="65" y="110" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#c084fc">Trending</text>
+    </g>
+
+    <g transform="translate(340, 140)">
+      <rect width="130" height="130" rx="10" fill="rgba(56, 189, 248, 0.12)" stroke="rgba(56, 189, 248, 0.6)" stroke-width="1.5" />
+      <circle cx="65" cy="45" r="22" fill="#38bdf8" />
+      <text x="65" y="52" text-anchor="middle" font-size="20">✨</text>
+      <text x="65" y="90" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="600" font-size="13" fill="#f8fafc">Gratitude</text>
+      <text x="65" y="110" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="10" fill="#38bdf8">Custom Box</text>
+    </g>
+  </g>
+</svg>
